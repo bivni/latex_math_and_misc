@@ -1,0 +1,21 @@
+\usepackage{ifthen}
+\usepackage{ifxetex}
+\ifthenelse{ \boolean{xetex} }{%  xelatex
+ \usepackage{xltxtra} 
+ \usepackage{fontspec}
+\defaultfontfeatures{Renderer=Basic, Ligatures=TeX} %лигатуры работают в basic режиме
+% \defaultfontfeatures{Scale=MatchLowercase, Mapping=tex-text} 
+
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}  %% свойства шрифтов по умолчанию
+\setmainfont[Ligatures={TeX,Historic}]{Times New Roman} %% задаёт основной шрифт документа
+
+\setsansfont{Arial}
+\setmonofont{Courier New}
+\newfontfamily{\cyrillicfonttt}{Courier New} 
+}{%                               pdflatex
+ \usepackage[utf8]{inputenc}
+ \usepackage[T2A]{fontenc}
+ \usepackage{cmap}  % correct copy and paste from pdf
+}
+
+ \usepackage[english,russian]{babel}

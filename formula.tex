@@ -1,0 +1,67 @@
+
+% !TeX root = main_2020_10_31.tex
+
+	\section{Формулы}
+	
+%  \DeclareMathOperator{\covarince}{cov} -- в преамбуле
+	
+	Зарплаты смотрите на странице \pageref{tab:salary} в  таблице \ref{tab:salary}
+	
+	
+	На странице \pageref{eq:sum1} смотрите формулу \ref{eq:sum1}  для   суммы.
+	
+	Строчная формула (inline equation) $ \rho=\frac{m}{V}$
+	
+	
+	Выключная формула (display equation) в стиле \TeX 
+	
+	 $$ \rho=\frac{m}{V}$$
+	 
+	 
+		Выключная формула (display equation) в стиле \LaTeX 
+	
+	\[ S^2 = a_1^2+ a_2^2+ a_3^2+\dots+a_n^2\] 
+	
+	\begin{equation}
+		S^2=\sum_{i=1}^{n} a_i^2  \label{eq:sum1}
+	\end{equation}
+	
+	
+	\begin{equation*}
+	S^2=\sum_{i=1}^{n} a_i^2
+	\end{equation*}
+	
+	
+    \begin{equation*}
+    S^4=\left(\sum_{i=1}^{n} a_i^2\right)^2
+    \end{equation*}
+    	
+    	
+    	\begin{equation}
+    		r=\frac{\covarince x y}{\sigma_x\cdot \sigma_y}
+    	\end{equation}
+    	
+  
+  \begin{equation}
+  r^2=\left(\frac{\covarince x y}{\sigma_x\cdot \sigma_y}\right)^2
+  \end{equation}
+  
+  
+  \begin{equation}
+     \int_{a}^b f(x) dx  = \left.F(x)\right|_a^b
+  \end{equation}
+    	
+    	
+  \begin{eqnarray}
+  	\sin x &=& \cos y \\
+  	\sin x + \cos 2y& =&\sin 2x +\cos y	
+  \end{eqnarray}  	
+ 
+ 
+\begin{equation}
+ \left\{\begin{array}{@{}ccc}
+\sin x &=& \cos y \\
+\sin x + \cos 2y& =&\sin 2x +\cos y	
+\end{array} \right. 	
+\end{equation} 
+ 

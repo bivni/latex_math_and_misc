@@ -1,0 +1,39 @@
+% !TeX root = main_2020_10_31.tex
+% !TeX TS-program=pdflatex
+
+
+
+\documentclass{article}
+
+\input{uni_font_preamble}
+
+\usepackage[english,russian]{babel}
+\usepackage{blindtext}
+\usepackage{soulutf8}
+\usepackage{tasks}
+
+
+\usepackage{amsmath,amssymb,amstext,mathtools}
+\DeclareMathOperator{\covarince}{cov}
+\newcommand{\covpart}[2]{\frac{\covarince {#1} {#2}}{\sigma_{#1}\cdot \sigma_{#2}}}
+
+
+
+
+\title{latex2020_2}
+\author{Ilya Kochergin}
+\date{October 2020}
+
+\begin{document}
+
+% \maketitle
+
+\section{Introduction}
+
+
+
+\input{tables.tex}
+
+\input{formula.tex}
+
+\end{document}
